@@ -1,4 +1,4 @@
-function findindex(value : number[]): number{
+function findindex<T>(value : T[]): T | undefined{
   let index = value[0]
   for (const number of value) {
     if (number > index) {
